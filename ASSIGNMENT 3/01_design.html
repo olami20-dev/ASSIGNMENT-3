@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Request Form</title>
+</head>
+<body>
+  <h2 style="text-align: center; color: darkblue;">Software Request</h2>
+  <form style="width: 400px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 8px;">
+    <label for="name">Name <span style="color: red;">*</span></label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px;"><br>
+
+    <label for="employee-id">Employee ID <span style="color: red;">*</span></label><br>
+    <input type="text" id="employee-id" name="employee-id" required style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px;"><br>
+
+    <label for="email">Email <span style="color: red;">*</span></label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px;"><br>
+
+    <label for="mobile">Mobile No / Extn. No</label><br>
+    <input type="text" id="mobile" name="mobile" style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px;"><br>
+
+    <label>Which software do you require? <span style="color: red;">*</span></label><br>
+    <input type="checkbox" id="software-a" name="software" value="A">
+    <label for="software-a">Software A</label><br>
+    <input type="checkbox" id="software-b" name="software" value="B">
+    <label for="software-b">Software B</label><br>
+    <input type="checkbox" id="software-c" name="software" value="C">
+    <label for="software-c">Software C</label><br><br>
+
+    <label>How urgently do you need it? <span style="color: red;">*</span></label><br>
+    <input type="radio" id="urgent" name="urgency" value="urgent" required>
+    <label for="urgent">As soon as possible</label><br>
+    <input type="radio" id="2-3-weeks" name="urgency" value="2-3-weeks">
+    <label for="2-3-weeks">Within 2 to 3 weeks</label><br>
+    <input type="radio" id="no-hurry" name="urgency" value="no-hurry">
+    <label for="no-hurry">I'm in no hurry</label><br><br>
+
+    <button type="submit" style="width: 100%; padding: 10px; background-color: #003366; color: white; border: none; border-radius: 4px;">Request</button>
+  </form>
+  
+</body>
+</html>
